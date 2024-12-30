@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        div {
+          background-color: yellow;
+          te /* Background color set to yellow */
+        }
+      </style>
+       <style>
+        p {
+          color:blue; /* Text color set to blue */
+        }
+      </style>
+   
+    <style>
+        .new-collection{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 300px;
+            text-decoration-color: green;
+            
+            position: relative;
+        }
+           
+            .new-collection::before{
+            content:"";   
+            width: 4px;
+            height: 40;
+            background-color: green;
+            position:absolute;
+        }
+        
+        
+        
+    </style>
+  <title>Boy Meets Girl Animation</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+    .container {
+      position: relative;
+      width: 800px;
+      height: 200px;
+      background-color: #ddd;
+      border: 2px solid #000;
+      overflow: hidden;
+    }
+    .boy, .girl {
+      position: relative;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: moveBoy 5s linear backwards;
+    }
+    .girl {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: moveGirl 5s linear backwards;
+    }
+    /* Animations */
+    @keyframes moveBoy {
+      from {
+        left: 0;
+      }
+      to {
+        left: 350px;
+      }
+    }
+    @keyframes moveGirl {
+      from {
+        right: 0;
+      }
+      to {
+        right: 350px;
+      }
+    }
+    @keyframes backgroundChange {
+      0% {
+        background-color: #f0f0f0;
+      }
+      50% {
+        background-color: #ffc107;
+      }
+      100% {
+        background-color: #f0f0f0;
+      }
+    }
+    .container {
+      animation: backgroundChange 5s;
+    }
+  </style>
+</head>
+<body>
+   
+    <div class="new-collection"new-collection> new-collection</div>
+  <div class="container">
+    <!-- Boy Image -->
+    <div class="boy">
+      <img src="https://images.app.goo.gl/3jEeeBk7R7cCZiYV7" alt="Boy" style="width: 100%; height: 100%; border-radius: 50%;">
+    </div>
+    <!-- Girl Image -->
+    <div class="girl">
+      <img src="https://images.app.goo.gl/3jEeeBk7R7cCZiYV7" alt="Girl" style="width: 100%; height: 100%; border-radius: 50%;">
+    </div>
+  </div>
+</body>
+</html>
